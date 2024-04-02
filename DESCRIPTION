@@ -22,7 +22,7 @@ License: MIT + file LICENSE
 VignetteBuilder: knitr
 Suggests: knitr, testthat, BiocStyle, kableExtra
 Imports: dplyr, ggplot2, ggrepel, purrr, stringr, survival, flextable,
-        xlsx, shiny, cowplot, rlang, GGally, ggcorrplot, tidyr,
+        shiny, cowplot, rlang, GGally, ggcorrplot, tidyr,
         summarytools, shinythemes, rmarkdown, DT, shinycssloaders,
         shinyjs
 Encoding: UTF-8
