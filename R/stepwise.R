@@ -32,7 +32,7 @@
 #'  
 #' @param num_digits (numeric(integer)) The number of digits to keep when rounding the results. Default is 6.
 #' 
-# @param report_name (NULL|character) The output report name with extented format, '.html', 'pdf', '.docx', '.pptx', '.xlsx' and '.rtf' are supported. If NULL, do not output report file. Default is NULL.
+# @param report_name (NULL|character) The output report name with extended format, '.html', 'pdf', '.docx', '.pptx', and '.rtf' are supported. If NULL, do not output report file. Default is NULL.
 #' 
 #' @references
 #' 

@@ -137,7 +137,7 @@ data.frame(Table_Name, Table_Description) %>%
   kable_styling()
 
 ## ----eval = FALSE-------------------------------------------------------------
-#  report(res, report_name = "results", format = c("xlsx", "docx"))
+#  report(res, report_name = "results", format = c("docx"))
 
 ## ----message = FALSE----------------------------------------------------------
 library(StepReg)

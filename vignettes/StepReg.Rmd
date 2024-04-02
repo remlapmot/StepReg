@@ -235,7 +235,7 @@ In StepReg, [QC Matrix Decomposition](https://towardsdatascience.com/qr-matrix-f
 
 # StepReg output {#stepregoutput}
 
-StepReg provides multiple functions for summarizing the model building results. The function `stepwise()` generates a list of tables that describe the feature selection steps and the final model. To facilitate collaborations, you can redirect the tables into various formats such as "xlsx", "html", "docx", etc. with the function `report()`. Furthermore, you can easily compare the variable selection procedures for multiple selection metrics by visualizing the steps with the function `plot()`. Details see below.
+StepReg provides multiple functions for summarizing the model building results. The function `stepwise()` generates a list of tables that describe the feature selection steps and the final model. To facilitate collaborations, you can redirect the tables into various formats such as "html", "docx", etc. with the function `report()`. Furthermore, you can easily compare the variable selection procedures for multiple selection metrics by visualizing the steps with the function `plot()`. Details see below.
 
 Depending on the number of selected regression strategies and metrics, you can expect to receive at least four tables from `stepwise()`. Below describes the content of each of 4 tables from Quick Demo \@ref(quickdemo).
 
@@ -254,9 +254,9 @@ data.frame(Table_Name, Table_Description) %>%
   kable_styling()
 ```
 
-You can save the output in different format like "xlsx", "docx", "html", "pptx", and others, facilitating easy sharing. Of note, the suffix will be automatically added to the `report_name`. For instance, the following example generates both "results.xlsx" and "results.docx" reports.
+You can save the output in different format like "docx", "html", "pptx", and others, facilitating easy sharing. Of note, the suffix will be automatically added to the `report_name`. For instance, the following example generates both "results.xlsx" and "results.docx" reports.
 ```{r, eval = FALSE}
-report(res, report_name = "results", format = c("xlsx", "docx"))
+report(res, report_name = "results", format = c("docx"))
 ```
 
 # Use cases {#usecases}

@@ -1,6 +1,6 @@
 #' report from a StepReg object
 #'
-#' report output all tables in StepReg object to a report with format of html, docx, pptx, rtf, and xlsx.
+#' report output all tables in StepReg object to a report with format of html, docx, pptx, and rtf.
 #'
 #' @param x StepReg object
 #' 
