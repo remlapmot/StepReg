@@ -4,17 +4,17 @@
 \alias{report}
 \title{report from a StepReg object}
 \usage{
-report(x, report_name, format = c("html", "docx", "rtf", "pptx", "xlsx"))
+report(x, report_name, format = c("html", "docx", "rtf", "pptx"))
 }
 \arguments{
 \item{x}{StepReg object}
 
 \item{report_name}{report name}
 
-\item{format}{the format of report, choose one or more from 'html', 'docx', 'rtf', 'pptx', 'xlsx'. default is 'html'}
+\item{format}{the format of report, choose one or more from 'html', 'docx', 'rtf', 'pptx'. default is 'html'}
 }
 \description{
-report output all tables in StepReg object to a report with format of html, docx, pptx, rtf, and xlsx.
+report output all tables in StepReg object to a report with format of html, docx, pptx, and rtf.
 }
 \examples{
 \dontrun{
