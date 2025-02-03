@@ -136,6 +136,8 @@ stepwise <- function(formula,
   test_method_glm <- match.arg(test_method_glm)
   test_method_cox <- match.arg(test_method_cox)
   
+  print("Debug 1")
+  
   x_name_orig <- getXname(formula, data)
   y_name <- getYname(formula, data)
   intercept <- getIntercept(formula, data, type = type) # char type
@@ -149,6 +151,8 @@ stepwise <- function(formula,
   }
   sigma_value <- getSigmaFullModel(model_raw, type, n_y)
   
+  print("Debug 2")
+  
   validateUtils(formula = formula, data = data, type = type, include = include, strategy = strategy, metric = metric, sle = sle, sls = sls, sigma_value = sigma_value, test_method_linear = test_method_linear, test_method_glm = test_method_glm, test_method_cox = test_method_cox, tolerance = tolerance, weight = weight, best_n = best_n, n_y = n_y)
   test_method <- getTestMethod(data, model_raw, type, metric, n_y, test_method_linear, test_method_glm, test_method_cox)
   
@@ -160,6 +164,8 @@ stepwise <- function(formula,
   ## table1
   table1_para_value <- getTable1SummaryOfParameters(formula, data, type, x_name_orig, y_name, merged_multico_x, merged_include, strategy, metric, sle, sls, test_method, tolerance, intercept)
   result$arguments <- table1_para_value
+  
+  print("Debug 3")
   
   ## table2
   table2_class_table <- getTable2TypeOfVariables(model_raw)
@@ -173,6 +179,8 @@ stepwise <- function(formula,
   
   table4_model <- getTable4ModelCall(type, intercept, include, x_final_model_metric, y_name, n_y, data, weight, test_method, num_digits)
   result <- append(result,table4_model)
+  
+  print("Debug 4")
   
   class(result) <- c("StepReg","list")
   attr(result, "nonhidden") <- strategy
